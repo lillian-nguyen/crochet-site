@@ -1,0 +1,251 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #EAF5FC;
+    margin: 0;
+}
+
+/* layout starts here*/
+
+/* header */
+header {
+    background-color: #E9EFF4;
+}
+
+.yarn {
+    width: 53vw;
+    height: 122vh;
+    margin-top: -18rem;
+}
+
+.h1-header {
+    margin: -52rem 0 0 87rem;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+}
+
+.h1-divider {
+    margin-left: 83.7rem;
+    width: 36%;
+    border: solid 1px black;
+}
+
+p {
+    font-size: 2.9rem;
+    margin: 1.9rem 0 0 86rem;
+    width: 35%;
+    font-style: italic;
+}
+
+.h1-dividerb {
+    margin-top: 33.3rem;
+    border: solid 0.8px lightgray;
+}
+
+/* sidebar */
+div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E9EFF4;
+    z-index: 1;
+    height: 100%;
+    width: 6%;
+    overflow-x: hidden;
+    padding-top: 28rem;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    color: gray;
+    border: 1px solid lightgray;
+    border-radius: 100%;
+    padding: 2rem 2.6rem;
+    transform: scale(0.6);
+    background-color: white;
+}
+
+/* ribbons */
+
+.ribbon-1,
+.ribbon-2,
+.ribbon-3 {
+    visibility: hidden;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 9.6rem;
+}
+
+.ribbon-1,
+.ribbon-2,
+.ribbon-3 {
+    --f: .9em;
+    /* control the folded part*/
+    --r: 1.8em;
+    /* control the ribbon shape */
+
+    position: fixed;
+    z-index: 2;
+    left: -40.1rem;
+    top: 17rem;
+    /* left: calc(-1*var(--f)); */
+    padding-inline: .25em;
+    /* line-height: 0.7; */
+    background: #B4D6F1;
+    border-top: var(--f) solid #0005;
+    border-right: var(--r) solid #0000;
+    clip-path:
+        polygon(0 100%, 0 var(--f), var(--f) 0,
+            var(--f) var(--f), 100% var(--f),
+            calc(100% - var(--r)) calc(50% + var(--f)/2), 100% 100%);
+    height: 0.2%;
+    width: 65%;
+    transform: scale(0.17);
+}
+
+.ribbon-1 h3,
+.ribbon-2 h3,
+.ribbon-3 h3 {
+    position: relative;
+    top: -32rem;
+    left: 23rem;
+    letter-spacing: 0.9rem;
+    color: white;
+    font-size: 10.8rem;
+    z-index: 3;
+}
+
+.ribbon-2 {
+    margin-top: 7.6rem;
+}
+
+.ribbon-3 {
+    margin-top: 15.5rem;
+}
+
+/* .sidebar-popups {
+    position: fixed;
+    margin: -0.9rem 0 0 7.8rem;
+    z-index: 2;
+    font-size: 2.6rem;
+    background-color: transparent;
+    width: 8%;
+}
+
+.sidebar-m1,
+.sidebar-m2,
+.sidebar-m3 {
+    background-color: #C4D4EC;
+    padding-left: 2rem;
+}
+
+.sidebar-m1 {
+    margin-top: 3.5rem;
+}
+
+.sidebar-m2 {
+    margin-top: 5.3rem;
+    padding-left: 2.5rem;
+}
+
+.sidebar-m3 {
+    margin-top: 5.4rem;
+    padding-left: 3rem;
+} */
+
+/* products section */
+
+h2 {
+    margin: 2rem 0 0 47rem;
+    padding-top: 10rem;
+    font-size: 6rem;
+    color: #9CC6EA;
+}
+
+.products-container {
+    height: 100rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4,
+.figure-5 {
+    width: 3rem;
+    height: 4rem;
+    position: relative;
+    background-color: white;
+    padding: 16rem 16rem 30rem 16rem;
+    margin-top: 10rem;
+    /* margin: 7rem 0 0 19rem; */
+    z-index: -1;
+    box-shadow: 0.8rem 0.7rem 2rem rgb(205, 210, 215);
+}
+
+.figure-1 img,
+.figure-2 img,
+.figure-3 img,
+.figure-4 img,
+.figure-5 img {
+    position: absolute;
+    margin: -12rem 0 0 -14rem;
+    z-index: 1;
+    width: 88%;
+    height: 73%;
+}
+
+.figure-1 figcaption,
+.figure-2 figcaption,
+.figure-3 figcaption,
+.figure-4 figcaption,
+.figure-5 figcaption {
+    position: relative;
+    top: 22.7rem;
+    left: -10.8rem;
+    z-index: 1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 5.3rem;
+    color: #B4D6F1;
+}
+
+.figure-3 figcaption {
+    margin-left: 8rem;
+}
+
+.figure-4 figcaption {
+    font-size: 4.7rem;
+    width: 22rem;
+    margin-top: 1rem;
+}
+
+.figure-5 figcaption {
+    font-size: 4.4rem;
+    width: 27rem;
+    margin: 0.7rem 0 0 -2.5rem;
+}
+
+/* Contact Form Section */
+
+.contact-page {
+    height: 60rem;
+}
+
+#contact-h2 {
+    padding-top: 22rem;
+    margin-left: 50rem;
+}

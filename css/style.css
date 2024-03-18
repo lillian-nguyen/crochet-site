@@ -60,6 +60,7 @@ div {
     width: 6%;
     overflow-x: hidden;
     padding-top: 28rem;
+    overflow: hidden;
 }
 
 .sidebar a {
@@ -242,10 +243,121 @@ h2 {
 /* Contact Form Section */
 
 .contact-page {
-    height: 60rem;
+    height: 120rem;
 }
 
 #contact-h2 {
-    padding-top: 22rem;
-    margin-left: 48rem;
+    padding-top: 12rem;
+    margin: 13rem 0 0 48rem;
 }
+
+.contact-box {
+    position: absolute;
+    top: 238rem;
+    left: 26rem;
+    height: 45rem;
+    width: 98rem;
+    background-color: #9CC6EA;
+    border-radius: 2rem;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.contact-box h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: -20rem;
+    font-size: 4.8rem;
+    letter-spacing: 0.4rem;
+    color: rgb(92, 98, 195);
+}
+
+.contact-box span {
+    display: flex;
+    justify-content: center;
+    margin-top: -2.8rem;
+    margin-left: -2.2rem;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.bunny {
+    /* scale: 45%;
+    margin: -14rem 0 0 -10rem; */
+    scale: 77%;
+    margin: -5rem 0 0 -8rem;
+}
+
+.roles {
+    position: relative;
+    top: -23rem;
+    left: -53rem;
+    width: 69%;
+    font-size: 2.2rem;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+.contact-socials {
+    position: absolute;
+    left: 32rem;
+    top: 1.3rem;
+    display: flex;
+    font-size: 6rem;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+}
+
+.contact-socials .ph {
+    padding-left: 4rem;
+}
+
+.contact-socials a {
+    text-decoration: none;
+    /* color: #5890de; */
+    color: rgb(254, 208, 242)
+}
+
+.socials-labels {
+    position: relative;
+    top: -67rem;
+    left: 38rem;
+    background-color: transparent;
+    width: 20rem;
+    height: 5rem;
+}
+
+.socials-labels span {
+    display: block;
+    color: rgb(170, 153, 153);
+    background-color: rgb(254, 208, 242);
+    border: 1px solid pink;
+    margin-left: 0rem;
+    margin-top: -5rem;
+    padding: 0.3rem 0 0.3rem 4rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    visibility: hidden;
+}
+
+.youtube-label,
+.email-label {
+    position: relative;
+    display: block;
+    left: 2rem;
+    top: 0.7rem;
+    width: 86%;
+}
+
+.email-label {
+    position: relative;
+    display: block;
+    width: 90%;
+    top: 1.4rem;
+}
+
+/* <span class="ig-label">instagram</span>
+                <span class="youtube-label">youtube</span>
+                <span class="email-label">mail</span> */

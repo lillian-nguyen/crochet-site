@@ -130,6 +130,19 @@ function resetProducts() {
     document.querySelector('.p5').style.visibility = 'initial'
 }
 
+//back button label on hover
+const backButtonLabel = document.querySelector('.ph-arrow-left')
+backButtonLabel.addEventListener('mouseover', showButton)
+backButtonLabel.addEventListener('mouseout', hideButton)
+
+function showButton() {
+    document.querySelector('.back-button').style.visibility = 'initial'
+}
+
+function hideButton() {
+    document.querySelector('.back-button').style.visibility = 'hidden'
+}
+
 //showing social media labels on hover 
 
 const instagram = document.getElementById('ig-logo')

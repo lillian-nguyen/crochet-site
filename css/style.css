@@ -26,7 +26,7 @@ header {
 }
 
 .h1-header {
-    margin: -52rem 0 0 87rem;
+    margin: -52rem 0 0 86.3rem;
     font-size: 5rem;
     letter-spacing: 0.3rem;
 }
@@ -39,13 +39,13 @@ header {
 
 p {
     font-size: 2.9rem;
-    margin: 1.9rem 0 0 86rem;
+    margin: 1.9rem 0 0 85rem;
     width: 35%;
     font-style: italic;
 }
 
 .h1-dividerb {
-    margin-top: 33.3rem;
+    margin-top: 40rem;
     border: solid 0.8px lightgray;
 }
 
@@ -223,8 +223,6 @@ div {
     margin: 1rem 0 0 -4rem;
 }
 
-
-
 .product-names {
     display: flex;
     flex-direction: row;
@@ -264,6 +262,14 @@ div {
     font-style: normal;
     text-align: center;
 }
+
+#productheader {
+    position: absolute;
+    font-size: 5rem;
+    color: #EAF5FC;
+    margin: 50rem 0 0 42rem;
+}
+
 
 /* .figure-1,
 .figure-2,
@@ -337,7 +343,7 @@ div {
     position: absolute;
     left: 74rem;
     top: 109.3rem;
-    background-color: rgb(249, 216, 222);
+    background-color: rgb(235, 230, 231);
     height: 33rem;
     width: 60rem;
     z-index: -1;
@@ -418,39 +424,35 @@ div {
     margin: -2.8rem 0 0 51rem;
 }
 
-/* padding: 2rem 2.6rem; */
+.ph-arrow-left:hover {
+    cursor: pointer;
+}
 
-/* <div class="inventory-bg">
-        <h5 class="colors-h5">colors</h5>
-        <div class="color1"></div>
-        <div class="color2"></div>
-        <div class="color3"></div>
-        <h5>prices</h5>
-            <ul>
-                <li class="1st-li">$3 for 1</li>
-                <li>$10 for 5</li>
-                <li>Message me for custom requests</li>
-            </ul>
-        <h5>production time</h5>
-        <span>2 days</span>
-    </div> */
+.back-button {
+    visibility: hidden;
+    position: absolute;
+    left: 25.3rem;
+    top: 27rem;
+    letter-spacing: 0.4rem;
+    margin: -3rem 0 0 2rem;
+}
 
 /* Contact Form Section */
 
 .contact-page {
-    height: 120rem;
+    height: 88rem;
 }
 
 #contact-h2 {
-    font-size: 5.8rem;
+    font-size: 5.9rem;
     padding-top: 12rem;
-    margin: 28rem 0 0 1rem;
+    margin: 9.9rem 0 0 1rem;
     color: #9CC6EA;
 }
 
 .contact-box {
     position: absolute;
-    top: 198rem;
+    top: 180rem;
     left: 26rem;
     height: 45rem;
     width: 98rem;

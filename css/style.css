@@ -8,7 +8,13 @@ html {
 }
 
 body {
-    background-color: #EAF5FC;
+    /* background-color: #EAF5FC; og light blue*/
+    /* background-color: rgb(204, 217, 234); blue gray*/
+    /* background-color: rgb(219, 229, 242); */
+    /* background-color: rgb(230, 237, 245); */
+    /* background-color: #ebf7fd; */
+    /* background: radial-gradient(white, #EAF5FC, #ebf7fd 20%, rgb(219, 229, 242)); */
+    background: radial-gradient(whitesmoke, #EAF5FC, #EBF7FD);
     margin: 0;
 }
 
@@ -230,6 +236,19 @@ div {
     height: 28rem;
     width: 75rem;
     column-gap: 1rem;
+    row-gap: 1.2rem;
+}
+
+.product-borders {
+    border: double 6px white;
+    transition-property: border;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.product-borders:hover {
+    border: double 10px white;
 }
 
 .product {
@@ -243,6 +262,7 @@ div {
     z-index: 3;
     width: 30%;
     height: 18rem;
+
 }
 
 .product h4 {
@@ -264,6 +284,7 @@ div {
 }
 
 #productheader {
+    visibility: hidden;
     position: absolute;
     font-size: 5rem;
     color: #EAF5FC;
@@ -444,6 +465,7 @@ div {
 }
 
 #contact-h2 {
+    letter-spacing: 0.7rem;
     font-size: 5.9rem;
     padding-top: 12rem;
     margin: 9.9rem 0 0 1rem;

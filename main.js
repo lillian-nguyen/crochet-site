@@ -1,4 +1,5 @@
-// showing sidebar messages on hover
+// show sidebar messages on hover
+
 const sidebarProduct = document.getElementById('sidebar-products')
 sidebarProduct.addEventListener('mouseover', showProducts)
 sidebarProduct.addEventListener('mouseout', hideProducts)
